@@ -1,0 +1,190 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    background-color: #3867CF;
+    padding: 16px;
+    margin-bottom: 32px;
+}
+
+header h1 {
+    font-style: italic;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+    width: 1024px;
+}
+
+header li {
+    display: inline;
+    list-style: none;
+    ;
+}
+
+header,
+header a {
+    color: #fff;
+}
+
+header a {
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: 16px;
+}
+
+.about {
+    display: flex;
+    margin-bottom: 32px;
+}
+
+.about div {
+    margin-left: 32px;
+}
+
+section h2 {
+    padding-bottom: 16px;
+    color: #3867CF;
+    font-style: italic;
+    border-bottom: 2px solid #3867CF;
+    margin-bottom: 32px;
+}
+
+.about img {
+    max-width: 50%;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(4, 24.25%);
+    column-gap: 1%;
+    margin-bottom: 32px;
+}
+
+.produto {
+    width: 100%;
+}
+
+.produto img {
+    max-width: 100%;
+}
+
+.produto p {
+    margin: 16px 0;
+    width: 100%;
+}
+
+.products button {
+    background-color: #3867CF;
+    color: #fff;
+    padding: 8px 32px;
+    border: none;
+    border-radius: 3px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.section-products {
+    margin-top: 16px;
+}
+
+@media screen and (max-width: 767px) {
+    body, html {
+        overflow-x: hidden;
+    }
+
+    header {
+        padding: 16px 32px;
+    }
+
+    header nav li {
+        display: inline-block;
+        margin: 4px 0;
+    }
+
+    .about {
+        display: block;
+        max-width: 100%;
+    }
+
+    .about img {
+        display: block;
+        margin: 0 auto;
+        max-width: inherit;
+        padding: 0 32px;
+    }
+
+    .about div {
+        margin: 32px;
+    }
+
+    .section-products {
+        margin: 0 32px;
+    }
+
+    .products {
+        display: block;
+        width: 100%;
+    }
+
+    .produto {
+        margin: 32px 0;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    header {
+        padding: 16px 0;
+    }
+    
+    header h1 {
+        margin-left: 64px;
+    }
+
+    header nav {
+        margin-right: 76px;
+    }
+
+    .container-principal {
+        width: 680px;
+        max-width: 100%;
+    }
+
+    .about {
+        display: block;
+        max-width: 100%;
+    }
+
+    .about img {
+        display: block;
+        margin: 0;
+        max-width: inherit;
+        width: 680px;
+    }
+
+    .about div {
+        margin: 32px 0;
+    }
+
+    .products {
+        grid-template-columns: repeat(2, 49%);
+        column-gap: 2%;
+        row-gap: 16px;
+    }
+}
